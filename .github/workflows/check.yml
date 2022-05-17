@@ -1,9 +1,7 @@
 name: say-hello
-
-on: push
-  
+on: [push]
   jobs:
-  	build:
-    		runs-on: ubuntu-latest
-    		steps:
-      			- run: make say-hello
+    build:
+      runs-on: ubuntu-latest
+      steps:
+      - run: make say-hello
